@@ -16,6 +16,8 @@
     header h1 { font-size: 2.8rem; margin-bottom: 12px; }
     header p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 12px; }
 
+    .contact { margin-bottom: 10px; color: #cbd5f5; }
+
     .links a { margin: 0 12px; font-weight: 500; }
 
     section { margin: 60px 0; }
@@ -47,30 +49,19 @@
     <header>
       <h1>Uday Reddy VK</h1>
       <p>Backend Engineer | Payments Systems | Distributed Architecture</p>
+      <div class="contact">
+        Email: udayreddy.vk@gmail.com | Mobile: +91-8555064434
+      </div>
       <div class="links">
         <a href="https://www.linkedin.com/in/udayreddyvk/" target="_blank">LinkedIn</a>
         <a href="https://github.com/udayreddyvk" target="_blank">GitHub</a>
-        <a href="mailto:udayreddy.vk@gmail.com">Email</a>
       </div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <div class="card">
-        Java backend developer with ~3.5 years of experience building payment and transaction systems using Java, Spring Boot, Kafka, and SQL. Experienced in designing idempotent APIs, event-driven workflows, and high-throughput services. Focused on performance optimization, reliability, and production debugging in banking systems.
-      </div>
-    </section>
-
-    <section>
-      <h2>Key Achievements</h2>
-      <div class="card">
-        <ul>
-          <li>Designed asynchronous payment workflow (API → Kafka → Consumer → DB)</li>
-          <li>Reduced transaction latency from minutes to seconds</li>
-          <li>Improved SQL and batch job performance by ~25–30%</li>
-          <li>Implemented idempotency, retry mechanisms, and dead-letter queues</li>
-          <li>Reduced transaction failures and duplicate payments by ~30%</li>
-        </ul>
+        Java backend developer with approximately 3.5 years of experience building payment and transaction systems using Java, Spring Boot, Apache Kafka, and SQL databases. Experienced in designing idempotent APIs, event-driven workflows, and high-throughput services. Focused on performance optimization, system reliability, and production debugging in banking environments.
       </div>
     </section>
 
@@ -79,29 +70,29 @@
 
       <div class="card job">
         <h3>Software Engineer — Cognizant</h3>
-        <p>Jul 2025 – Present | Client: HDFC Bank — Retail Banking & Loan Management</p>
+        <p>July 2025 – Present | Client: HDFC Bank — Retail Banking and Loan Management System</p>
         <ul>
-          <li>Developed backend services for payment initiation and approval workflows handling high-volume transactions</li>
-          <li>Built Kafka producers and consumers enabling real-time transaction updates</li>
-          <li>Designed asynchronous workflow ensuring scalability and fault tolerance</li>
-          <li>Improved SQL query performance and batch reconciliation jobs (~25–30%)</li>
-          <li>Implemented validation and duplicate payment prevention logic</li>
-          <li>Contributed to CI/CD pipelines and unit testing (JUnit, Mockito)</li>
-          <li>Deployed and tested services on AWS EC2 with RDS integration</li>
+          <li>Developed backend services for payment initiation and approval workflows, handling high-volume transaction processing as the primary entry point for payment systems.</li>
+          <li>Built Apache Kafka producers and consumers to enable real-time transaction updates, reducing data processing delays from minutes to seconds.</li>
+          <li>Designed and implemented an asynchronous payment processing workflow using API to Kafka to consumer to database architecture, ensuring scalability, fault tolerance, and non-blocking processing.</li>
+          <li>Improved SQL query performance and optimized batch reconciliation jobs, reducing execution time by approximately 25 to 30 percent.</li>
+          <li>Implemented validation mechanisms and duplicate payment prevention logic, reducing transaction failures and customer issues by approximately 30 percent.</li>
+          <li>Contributed to continuous integration and continuous deployment pipelines and implemented unit testing using JUnit and Mockito, improving deployment stability.</li>
+          <li>Deployed and tested backend services on Amazon Web Services EC2 instances with relational database service integration.</li>
         </ul>
       </div>
 
       <div class="card job">
         <h3>Associate Systems Engineer — CGI</h3>
-        <p>Nov 2021 – Sep 2024 | Client: Deutsche Bank — Trade Lifecycle & Reporting</p>
+        <p>November 2021 – September 2024 | Client: Deutsche Bank — Trade Lifecycle and Regulatory Reporting</p>
         <ul>
-          <li>Designed and developed microservices for payment processing and reconciliation</li>
-          <li>Built Kafka-based event-driven workflows for transaction tracking and alerts</li>
-          <li>Implemented idempotency keys, retries, and dead-letter queues</li>
-          <li>Used Redis caching to improve response time and reduce DB load</li>
-          <li>Optimized SQL queries, indexing, and connection pooling (~20–30%)</li>
-          <li>Secured APIs using OAuth2/JWT and encryption</li>
-          <li>Performed production support, RCA, and performance debugging</li>
+          <li>Designed and developed microservices for payment processing and reconciliation, supporting high-volume transaction workflows and improving system reliability.</li>
+          <li>Built Apache Kafka based event-driven workflows for transaction status tracking and alerting systems.</li>
+          <li>Implemented idempotency keys, retry mechanisms, and dead-letter queue handling, reducing duplicate transactions and failure scenarios in distributed systems.</li>
+          <li>Implemented Redis caching for frequently accessed payment data, reducing database load and improving response time.</li>
+          <li>Optimized SQL queries, indexing strategies, and connection pooling configurations, improving application performance by approximately 20 to 30 percent.</li>
+          <li>Secured application programming interfaces using OAuth 2.0, JSON Web Tokens, and encryption techniques for sensitive financial data.</li>
+          <li>Provided production support, performed root cause analysis, and resolved performance bottlenecks in payment processing systems.</li>
         </ul>
       </div>
 
@@ -116,9 +107,9 @@
         <span>Spring Security</span>
         <span>Spring Data JPA</span>
         <span>Hibernate</span>
-        <span>Microservices</span>
+        <span>Microservices Architecture</span>
         <span>REST APIs</span>
-        <span>Kafka</span>
+        <span>Apache Kafka</span>
         <span>Redis</span>
         <span>PostgreSQL</span>
         <span>MySQL</span>
@@ -134,3 +125,20 @@
         <span>Agile/Scrum</span>
       </div>
     </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        Bachelor of Technology in Mechanical Engineering (2017 – 2021)<br>
+        CMR Engineering College, Hyderabad<br>
+        CGPA: 7.0 / 10
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Uday Reddy VK</p>
+    </footer>
+
+  </div>
+</body>
+</html>
