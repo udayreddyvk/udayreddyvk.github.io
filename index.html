@@ -7,23 +7,60 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
     body { background: #0b1220; color: #e5e7eb; line-height: 1.7; }
-    a { color: #38bdf8; text-decoration: none; transition: 0.2s; }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      color: #7dd3fc;
+      transform: translateY(-1px);
+    }
     a:hover { opacity: 0.8; }
 
     .container { max-width: 1050px; margin: auto; padding: 24px; }
 
-    header { text-align: center; padding: 40px 20px 10px; }
-    header h1 { font-size: 2.8rem; margin-bottom: 12px; }
-    header p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 12px; }
+    header { text-align: center; padding: 20px 20px 10px; }
+    header h1 { font-size: 2.8rem; margin-bottom: 8px; }
+    header p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 8px; }
 
     .contact { margin-bottom: 10px; color: #cbd5f5; }
 
     .links a { margin: 0 12px; font-weight: 500; }
 
     section { margin: 25px 0; }
-    h2 { font-size: 1.6rem; margin-bottom: 18px; border-bottom: 2px solid #1f2937; padding-bottom: 6px; }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+      padding-bottom: 6px;
+      position: relative;
+    }
 
-    .card { background: #111827; padding: 22px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 2px;
+      background: #38bdf8;
+      border-radius: 2px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 22px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
 
     .skills span {
       display: inline-block;
@@ -40,7 +77,41 @@
     ul { margin-left: 20px; }
     ul li { margin-bottom: 8px; }
 
-    footer { text-align: center; margin-top: 60px; color: #6b7280; }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  
+
+    /* Mobile Optimization */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 0.95rem; }
+
+      .container { padding: 16px; }
+
+      .contact span {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      header div a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .skills span {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+      }
+
+      section { margin: 20px 0; }
+
+      .card { padding: 16px; }
+    }
+
   </style>
 </head>
 <body>
@@ -50,12 +121,12 @@
       <h1>Uday Reddy VK</h1>
       <p>Backend Engineer | Payments Systems | Distributed Architecture</p>
 
-      <div style="margin-top:12px; color:#cbd5f5; font-size:0.95rem;">
+      <div style="margin-top:8px; color:#cbd5f5; font-size:0.95rem;">
         <span style="margin-right:20px;">✉️ udayreddy.vk@gmail.com</span>
         <span>📞 +91-8555064434</span>
       </div>
 
-      <div style="margin-top:15px;">
+      <div style="margin-top:10px;">
         <a href="https://www.linkedin.com/in/udayreddyvk/" target="_blank" style="margin-right:20px;">
           🔗 LinkedIn
         </a>
