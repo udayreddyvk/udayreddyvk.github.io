@@ -8,17 +8,22 @@
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
     body { background: #0b1220; color: #e5e7eb; line-height: 1.7; }
 
-    .container { max-width: 1050px; margin: auto; padding: 20px; }
+    .container { max-width: 1050px; margin: auto; padding: 16px; }
 
-    header { text-align: center; padding: 20px 20px 10px; }
-    header h1 { font-size: 2.6rem; margin-bottom: 6px; }
-    header p { color: #94a3b8; font-size: 1.05rem; margin-bottom: 6px; }
+    /* Tighter header */
+    header { text-align: center; padding: 12px 12px 6px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 4px; }
+    header p { color: #94a3b8; font-size: 1.02rem; margin-bottom: 4px; }
 
-    section { margin: 25px 0; }
+    .contact { margin-top: 4px; font-size: 0.9rem; color: #cbd5f5; }
+    .links { margin-top: 6px; font-size: 0.9rem; }
+
+    /* Reduced section gaps */
+    section { margin: 18px 0; }
 
     h2 {
       font-size: 1.5rem;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       position: relative;
     }
 
@@ -26,7 +31,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -4px;
+      bottom: -3px;
       width: 50px;
       height: 2px;
       background: #38bdf8;
@@ -34,14 +39,14 @@
 
     .card {
       background: #111827;
-      padding: 18px;
+      padding: 16px;
       border-radius: 12px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       box-shadow: 0 6px 25px rgba(0,0,0,0.35);
       transition: transform 0.2s ease;
     }
 
-    .card:hover { transform: translateY(-3px); }
+    .card:hover { transform: translateY(-2px); }
 
     ul { margin-left: 18px; }
     ul li { margin-bottom: 6px; }
@@ -55,12 +60,14 @@
       font-size: 0.85rem;
     }
 
-    footer { text-align: center; margin-top: 40px; color: #6b7280; }
+    footer { text-align: center; margin-top: 28px; color: #6b7280; }
 
+    /* Mobile */
     @media (max-width:600px){
       header h1{font-size:2rem}
-      header p{font-size:0.9rem}
-      .container{padding:14px}
+      header p{font-size:0.92rem}
+      .container{padding:12px}
+      section{margin:14px 0}
     }
   </style>
 </head>
@@ -70,18 +77,14 @@
     <header>
       <h1>Uday Reddy VK</h1>
       <p>Backend Engineer | Payments Systems | Distributed Architecture</p>
-      <div style="margin-top:6px; font-size:0.9rem; color:#cbd5f5;">
-        ✉️ udayreddy.vk@gmail.com &nbsp; | &nbsp; 📞 +91-8555064434
-      </div>
-      <div style="margin-top:8px; font-size:0.9rem;">
-        🔗 LinkedIn &nbsp;&nbsp; 💻 GitHub
-      </div>
+      <div class="contact">✉️ udayreddy.vk@gmail.com &nbsp; | &nbsp; 📞 +91-8555064434</div>
+      <div class="links">🔗 LinkedIn &nbsp;&nbsp; 💻 GitHub</div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <div class="card">
-        Backend engineer with approximately 3.5 years of experience building high-throughput payment and transaction systems using Java, Spring Boot, and Kafka. Specialized in event-driven architecture, idempotent APIs, and distributed system reliability. Experienced in performance optimization, production issue handling, and scalable backend design in banking systems. fileciteturn1file0
+        Backend engineer with approximately 3.5 years of experience building high-throughput payment and transaction systems using Java, Spring Boot, and Kafka. Specialized in event-driven architecture, idempotent APIs, and distributed system reliability. Experienced in performance optimization, production issue handling, and scalable backend design in banking systems.
       </div>
     </section>
 
@@ -113,12 +116,13 @@
         <h3>Software Engineer — Cognizant</h3>
         <p>July 2025 – Present | HDFC Bank</p>
         <ul>
-          <li>Owned backend services for payment initiation and approval workflows handling high-volume transactions</li>
-          <li>Designed and implemented asynchronous payment flow to improve scalability and fault tolerance</li>
-          <li>Developed Kafka producers and consumers reducing latency from minutes to seconds</li>
-          <li>Implemented duplicate payment prevention logic reducing failures by ~30%</li>
-          <li>Optimized SQL queries and batch jobs improving performance by ~25–30%</li>
-          <li>Worked on CI/CD pipelines, testing, and AWS deployments</li>
+          <li>Owned backend services for payment initiation and approval workflows, handling high-volume transaction processing</li>
+          <li>Contributed to design and implementation of asynchronous payment flow (API → Kafka → consumer → DB) to improve scalability and fault tolerance</li>
+          <li>Developed and maintained Kafka producers and consumers for real-time transaction updates, reducing data latency from minutes to seconds</li>
+          <li>Implemented duplicate payment prevention and validation logic, reducing transaction failures by approximately 30 percent</li>
+          <li>Optimized SQL queries and batch reconciliation jobs, improving execution time by approximately 25 to 30 percent</li>
+          <li>Worked on continuous integration and deployment pipelines, unit testing, and deployment workflows, improving release stability</li>
+          <li>Deployed and tested services on AWS EC2 with RDS integration</li>
         </ul>
       </div>
 
@@ -126,13 +130,13 @@
         <h3>Associate Systems Engineer — CGI</h3>
         <p>November 2021 – September 2024 | Deutsche Bank</p>
         <ul>
-          <li>Owned microservices for payment processing and reconciliation</li>
-          <li>Built Kafka-based event-driven workflows for tracking and alerts</li>
-          <li>Implemented idempotency, retries, and DLQ reducing failures</li>
-          <li>Introduced Redis caching improving response time</li>
-          <li>Optimized SQL and API performance by ~20–30%</li>
-          <li>Secured APIs using OAuth2 and JWT</li>
-          <li>Handled production debugging and performance tuning</li>
+          <li>Owned microservices and modules for payment processing and reconciliation workflows in high-volume transaction systems</li>
+          <li>Built Kafka-based event-driven workflows for transaction tracking, alerts, and inter-service communication</li>
+          <li>Implemented idempotency keys, retry strategies, and dead-letter queues, reducing duplicate transactions and failure scenarios</li>
+          <li>Introduced Redis caching for frequently accessed data, improving response time and reducing database load</li>
+          <li>Optimized SQL queries, indexing, and connection pooling, improving API latency by approximately 20 to 30 percent</li>
+          <li>Secured APIs using OAuth2, JWT, and encryption for sensitive financial data</li>
+          <li>Supported production systems, performed root cause analysis, debugging, and performance tuning</li>
         </ul>
       </div>
 
@@ -143,11 +147,11 @@
       <div class="card">
         <h3>Payment Processing System (Kafka-based Microservices)</h3>
         <ul>
-          <li>Built end-to-end system with payment APIs, Kafka messaging, retry handling, and dead-letter queues</li>
-          <li>Designed idempotent request handling to prevent duplicate transactions</li>
-          <li>Implemented Redis caching and rate limiting for performance improvement</li>
-          <li>Developed asynchronous architecture for high-throughput processing</li>
-          <li>Added monitoring metrics for latency and failure tracking</li>
+          <li>Built end-to-end system with payment APIs, Kafka messaging, retry handling, and dead-letter queue mechanisms</li>
+          <li>Designed idempotent request handling to ensure safe retries and prevent duplicate transactions</li>
+          <li>Implemented Redis caching and rate limiting to improve performance and system stability</li>
+          <li>Developed asynchronous processing architecture for high-throughput transaction handling</li>
+          <li>Added monitoring metrics such as latency and failure tracking for observability</li>
         </ul>
       </div>
     </section>
