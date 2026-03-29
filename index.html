@@ -7,33 +7,18 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
     body { background: #0b1220; color: #e5e7eb; line-height: 1.7; }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      transition: color 0.2s ease, transform 0.2s ease;
-    }
 
-    a:hover {
-      color: #7dd3fc;
-      transform: translateY(-1px);
-    }
-    a:hover { opacity: 0.8; }
-
-    .container { max-width: 1050px; margin: auto; padding: 24px; }
+    .container { max-width: 1050px; margin: auto; padding: 20px; }
 
     header { text-align: center; padding: 20px 20px 10px; }
-    header h1 { font-size: 2.8rem; margin-bottom: 8px; }
-    header p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 8px; }
-
-    .contact { margin-bottom: 10px; color: #cbd5f5; }
-
-    .links a { margin: 0 12px; font-weight: 500; }
+    header h1 { font-size: 2.6rem; margin-bottom: 6px; }
+    header p { color: #94a3b8; font-size: 1.05rem; margin-bottom: 6px; }
 
     section { margin: 25px 0; }
+
     h2 {
-      font-size: 1.6rem;
-      margin-bottom: 18px;
-      padding-bottom: 6px;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
       position: relative;
     }
 
@@ -41,77 +26,42 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: 0;
-      width: 60px;
+      bottom: -4px;
+      width: 50px;
       height: 2px;
       background: #38bdf8;
-      border-radius: 2px;
     }
 
     .card {
       background: #111827;
-      padding: 22px;
-      border-radius: 14px;
-      margin-bottom: 20px;
-      box-shadow: 0 6px 30px rgba(0,0,0,0.35);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+      transition: transform 0.2s ease;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    }
+    .card:hover { transform: translateY(-3px); }
+
+    ul { margin-left: 18px; }
+    ul li { margin-bottom: 6px; }
 
     .skills span {
       display: inline-block;
       background: #1f2937;
-      padding: 8px 14px;
-      margin: 6px;
-      border-radius: 8px;
-      font-size: 0.9rem;
+      padding: 6px 10px;
+      margin: 4px;
+      border-radius: 6px;
+      font-size: 0.85rem;
     }
 
-    .job h3 { margin-bottom: 6px; }
-    .job p { color: #9ca3af; font-size: 0.9rem; margin-bottom: 10px; }
+    footer { text-align: center; margin-top: 40px; color: #6b7280; }
 
-    ul { margin-left: 20px; }
-    ul li { margin-bottom: 8px; }
-
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      color: #6b7280;
-      font-size: 0.9rem;
+    @media (max-width:600px){
+      header h1{font-size:2rem}
+      header p{font-size:0.9rem}
+      .container{padding:14px}
     }
-  
-
-    /* Mobile Optimization */
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 0.95rem; }
-
-      .container { padding: 16px; }
-
-      .contact span {
-        display: block;
-        margin-bottom: 6px;
-      }
-
-      header div a {
-        display: inline-block;
-        margin: 6px 8px;
-      }
-
-      .skills span {
-        font-size: 0.8rem;
-        padding: 6px 10px;
-      }
-
-      section { margin: 20px 0; }
-
-      .card { padding: 16px; }
-    }
-
   </style>
 </head>
 <body>
@@ -120,87 +70,85 @@
     <header>
       <h1>Uday Reddy VK</h1>
       <p>Backend Engineer | Payments Systems | Distributed Architecture</p>
-
-      <div style="margin-top:8px; color:#cbd5f5; font-size:0.95rem;">
-        <span style="margin-right:20px;">✉️ udayreddy.vk@gmail.com</span>
-        <span>📞 +91-8555064434</span>
+      <div style="margin-top:6px; font-size:0.9rem; color:#cbd5f5;">
+        ✉️ udayreddy.vk@gmail.com &nbsp; | &nbsp; 📞 +91-8555064434
       </div>
-
-      <div style="margin-top:10px;">
-        <a href="https://www.linkedin.com/in/udayreddyvk/" target="_blank" style="margin-right:20px;">
-          🔗 LinkedIn
-        </a>
-        <a href="https://github.com/udayreddyvk" target="_blank">
-          💻 GitHub
-        </a>
+      <div style="margin-top:8px; font-size:0.9rem;">
+        🔗 LinkedIn &nbsp;&nbsp; 💻 GitHub
       </div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <div class="card">
-        Java backend developer with approximately 3.5 years of experience building payment and transaction systems using Java, Spring Boot, Apache Kafka, and SQL databases. Experienced in designing idempotent APIs, event-driven workflows, and high-throughput services. Focused on performance optimization, system reliability, and production debugging in banking environments.
+        Backend engineer with approximately 3.5 years of experience building high-throughput payment and transaction systems using Java, Spring Boot, and Kafka. Specialized in event-driven architecture, idempotent APIs, and distributed system reliability. Experienced in performance optimization, production issue handling, and scalable backend design in banking systems. fileciteturn1file0
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>Kafka</span><span>Redis</span>
+        <span>PostgreSQL</span><span>MySQL</span><span>AWS</span><span>REST APIs</span><span>Distributed Systems</span>
+        <span>Docker</span><span>Jenkins</span><span>JUnit</span><span>Mockito</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>System Design</h2>
+      <div class="card">
+        <ul>
+          <li>Designed asynchronous payment workflow using API to Kafka to consumer to database architecture for scalable processing</li>
+          <li>Implemented idempotency, retry mechanisms, and dead-letter queues for failure handling</li>
+          <li>Built event-driven systems for real-time transaction updates</li>
+          <li>Applied Redis caching and rate limiting to reduce database load and improve latency</li>
+        </ul>
       </div>
     </section>
 
     <section>
       <h2>Experience</h2>
 
-      <div class="card job">
+      <div class="card">
         <h3>Software Engineer — Cognizant</h3>
-        <p>July 2025 – Present | Client: HDFC Bank — Retail Banking and Loan Management System</p>
+        <p>July 2025 – Present | HDFC Bank</p>
         <ul>
-          <li>Developed backend services for payment initiation and approval workflows, handling high-volume transaction processing as the primary entry point for payment systems.</li>
-          <li>Built Apache Kafka producers and consumers to enable real-time transaction updates, reducing data processing delays from minutes to seconds.</li>
-          <li>Designed and implemented an asynchronous payment processing workflow using API to Kafka to consumer to database architecture, ensuring scalability, fault tolerance, and non-blocking processing.</li>
-          <li>Improved SQL query performance and optimized batch reconciliation jobs, reducing execution time by approximately 25 to 30 percent.</li>
-          <li>Implemented validation mechanisms and duplicate payment prevention logic, reducing transaction failures and customer issues by approximately 30 percent.</li>
-          <li>Contributed to continuous integration and continuous deployment pipelines and implemented unit testing using JUnit and Mockito, improving deployment stability.</li>
-          <li>Deployed and tested backend services on Amazon Web Services EC2 instances with relational database service integration.</li>
+          <li>Owned backend services for payment initiation and approval workflows handling high-volume transactions</li>
+          <li>Designed and implemented asynchronous payment flow to improve scalability and fault tolerance</li>
+          <li>Developed Kafka producers and consumers reducing latency from minutes to seconds</li>
+          <li>Implemented duplicate payment prevention logic reducing failures by ~30%</li>
+          <li>Optimized SQL queries and batch jobs improving performance by ~25–30%</li>
+          <li>Worked on CI/CD pipelines, testing, and AWS deployments</li>
         </ul>
       </div>
 
-      <div class="card job">
+      <div class="card">
         <h3>Associate Systems Engineer — CGI</h3>
-        <p>November 2021 – September 2024 | Client: Deutsche Bank — Trade Lifecycle and Regulatory Reporting</p>
+        <p>November 2021 – September 2024 | Deutsche Bank</p>
         <ul>
-          <li>Designed and developed microservices for payment processing and reconciliation, supporting high-volume transaction workflows and improving system reliability.</li>
-          <li>Built Apache Kafka based event-driven workflows for transaction status tracking and alerting systems.</li>
-          <li>Implemented idempotency keys, retry mechanisms, and dead-letter queue handling, reducing duplicate transactions and failure scenarios in distributed systems.</li>
-          <li>Implemented Redis caching for frequently accessed payment data, reducing database load and improving response time.</li>
-          <li>Optimized SQL queries, indexing strategies, and connection pooling configurations, improving application performance by approximately 20 to 30 percent.</li>
-          <li>Secured application programming interfaces using OAuth 2.0, JSON Web Tokens, and encryption techniques for sensitive financial data.</li>
-          <li>Provided production support, performed root cause analysis, and resolved performance bottlenecks in payment processing systems.</li>
+          <li>Owned microservices for payment processing and reconciliation</li>
+          <li>Built Kafka-based event-driven workflows for tracking and alerts</li>
+          <li>Implemented idempotency, retries, and DLQ reducing failures</li>
+          <li>Introduced Redis caching improving response time</li>
+          <li>Optimized SQL and API performance by ~20–30%</li>
+          <li>Secured APIs using OAuth2 and JWT</li>
+          <li>Handled production debugging and performance tuning</li>
         </ul>
       </div>
 
     </section>
 
     <section>
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>Java 8/17</span>
-        <span>Spring Boot</span>
-        <span>Spring MVC</span>
-        <span>Spring Security</span>
-        <span>Spring Data JPA</span>
-        <span>Hibernate</span>
-        <span>Microservices Architecture</span>
-        <span>REST APIs</span>
-        <span>Apache Kafka</span>
-        <span>Redis</span>
-        <span>PostgreSQL</span>
-        <span>MySQL</span>
-        <span>AWS EC2</span>
-        <span>AWS RDS</span>
-        <span>Docker</span>
-        <span>Jenkins</span>
-        <span>Maven</span>
-        <span>JUnit 5</span>
-        <span>Mockito</span>
-        <span>SonarQube</span>
-        <span>Git</span>
-        <span>Agile/Scrum</span>
+      <h2>Project</h2>
+      <div class="card">
+        <h3>Payment Processing System (Kafka-based Microservices)</h3>
+        <ul>
+          <li>Built end-to-end system with payment APIs, Kafka messaging, retry handling, and dead-letter queues</li>
+          <li>Designed idempotent request handling to prevent duplicate transactions</li>
+          <li>Implemented Redis caching and rate limiting for performance improvement</li>
+          <li>Developed asynchronous architecture for high-throughput processing</li>
+          <li>Added monitoring metrics for latency and failure tracking</li>
+        </ul>
       </div>
     </section>
 
@@ -209,12 +157,12 @@
       <div class="card">
         Bachelor of Technology in Mechanical Engineering (2017 – 2021)<br>
         CMR Engineering College, Hyderabad<br>
-        CGPA: 7.0 / 10
+        CGPA: 7 / 10
       </div>
     </section>
 
     <footer>
-      <p>© 2026 Uday Reddy VK</p>
+      © 2026 Uday Reddy VK
     </footer>
 
   </div>
